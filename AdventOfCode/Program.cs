@@ -5,10 +5,10 @@ namespace AdventOfCode;
 
 public sealed class Aoc {
     public static void Main() {
-        //BenchmarkRunner.Run<Benchmark>();
-        //return;
+        BenchmarkRunner.Run<Benchmark>();
+        return;
         
-        var day = new DayFourPartTwo();
+        var day = new DayFourPartTwoForFun();
         
         var result = day.Run();
 

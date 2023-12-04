@@ -1,4 +1,4 @@
-﻿using AdventOfCode.Days.DayThree;
+﻿using AdventOfCode.Days.DayFour;
 using BenchmarkDotNet.Running;
 
 namespace AdventOfCode;
@@ -8,7 +8,7 @@ public sealed class Aoc {
         //BenchmarkRunner.Run<Benchmark>();
         //return;
         
-        var day = new DayThreePartTwo();
+        var day = new DayFourPartTwo();
         
         var result = day.Run();
 

@@ -1,5 +1,4 @@
-using AdventOfCode.Days;
-using AdventOfCode.Days.DayTwo;
+using AdventOfCode.Days.DayFour;
 using BenchmarkDotNet.Attributes;
 
 namespace AdventOfCode; 
@@ -7,15 +6,15 @@ namespace AdventOfCode;
 [MemoryDiagnoser]
 public class Benchmark {
 
-    [Benchmark]
-    public int Day2Part1Bench() {
-        var day = new DayTwoPartOne();
+    /*[Benchmark]
+    public int Day4Part1Bench() {
+        var day = new DayFourPartOne();
         return day.Run();
-    }
+    }*/
     
     [Benchmark]
-    public int Day2Part2Bench() {
-        var day = new DayTwoPartTwo();
+    public int Day4Part2Bench() {
+        var day = new DayFourPartTwo();
         return day.Run();
     }
 }

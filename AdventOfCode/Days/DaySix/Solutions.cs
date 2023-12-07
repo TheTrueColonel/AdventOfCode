@@ -16,13 +16,17 @@ public class DaySix {
             var winningCount = 0;
             
             for (var i = 1; i < item.Item1; i++) {
-                if (i * (item.Item1 - i) > item.Item2) 
+                if (i * (item.Item1 - i) > item.Item2) {
                     winningCount++;
+                    
+                    continue;
+                }
+
+                if (winningCount > 0)
+                    break;
             }
 
-            if (winningCount > 0) {
-                result *= winningCount;
-            }
+            result *= winningCount;
         }
 
         return result;
